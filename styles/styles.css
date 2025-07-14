@@ -1,24 +1,40 @@
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color:#333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --border: 1px solid rgba(0, 0, 0, 0.2);
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 nav a {
+    font-family: var(--body-font);
     color: white;
     display: block;
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+}
+h2 {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 p {
+    font-family: var(--body-font);
     padding: 0;
+    color:#333;
 }
 main {
     max-width: 840px;
@@ -26,10 +42,9 @@ main {
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: var(--border);
     padding: 1rem;
     background-color: #eee;
-    color: #333;
     text-align: center;
 }
 aside img {
