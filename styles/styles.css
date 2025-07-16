@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --heading-background-color: #f06;
     --heading-text-color:#333;
     --heading-font: 'Montserrat', Helvetica, sans-serif;
     --border: 1px solid rgba(0, 0, 0, 0.2);
+    --image-border: 1px solid #333;
     --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --padding: 1rem;    
 }
@@ -28,9 +34,10 @@ h2 {
 main img {
     width: 150px;
     height: auto;
-    border: var(--border);
+    border: var(--image-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p {
     font-family: var(--body-font);
@@ -42,20 +49,39 @@ main {
 }
 aside {
     width: 20em;
-    margin: 1em;
-    border: var(--border);
     padding: var(--padding);
-    background-color: #eee;
     text-align: center;
+    position: relative;
+}
+aside h2 {
+    position: absolute;
+    top: 80px; /* I took the title down since it was covering the model's face */
+    left: 115px;
+    color: rgba(0, 0, 0, 0.6); /* I also made it a bit transparent */
+    
+
 }
 aside img {
     width: 200px;
     height: auto;
+    border: var(--image-border);
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    
     /* border-radius: 7px; */
 }
 
 footer {
-    margin-top: 1em;
+    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selections */
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
 }
