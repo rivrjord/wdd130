@@ -107,6 +107,11 @@ h1 {
     width: 125px;
 }
 
+article h2 {
+    color: var(--accent1-color);
+    text-align: center;
+}
+
 /* Main Content */
 main {
     clear: both;
