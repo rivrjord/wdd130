@@ -40,13 +40,12 @@ header, main, footer {
 
 /* Header */
 header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--accent1-color);
-    padding: 0 1rem;
+    padding: 1rem;
     gap: 2rem;
 }
 
@@ -206,4 +205,11 @@ footer img {
 /* Links */
 .socialmedia a {
     text-decoration: none;
+}
+
+.adventure p {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.1rem;
+    color: var(--accent2-color);
 }
