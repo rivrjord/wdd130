@@ -101,11 +101,29 @@
                         <div>
                             <label for="purpose">Purpose</label>
                             <select id="purpose" name="purpose" required>
+                                <option value="" disabled selected>Select purpose of contact</option>
                                 <option value="general">General Inquiry</option>
                                 <option value="reservation">Reservation Question</option>
                                 <option value="website">Website Suggestion</option>
                             </select>
                         </div>
+                        <!-- <div> I can create and style with the radio type, but I choose to do it my way, because I find it more appealing in my design--> 
+                            <!-- <label>Purpose</label>
+                            <div>
+                                <label>
+                                    <input type="radio" name="purpose" value="general" required>
+                                    General Inquiry
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="reservation">
+                                    Reservation Question
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="website">
+                                    Website Suggestion
+                                </label>
+                            </div>
+                        </div> -->
                     </div>
                     
                     <label for="message">Message</label>
